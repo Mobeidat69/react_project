@@ -47,6 +47,14 @@ span{
     font-weight:700;
 }
 
+#register #regarea h1 span{
+    color: rgb(11, 123, 29);
+}
+
+#register #regarea form span{
+    color: rgb(11, 123, 29);
+}
+
 label{
     font-size:1rem;
 }

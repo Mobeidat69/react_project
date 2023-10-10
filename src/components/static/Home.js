@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import '../../css/home.css';
-import eCommerce from '../../img/homeimg.svg';
+import eCommerce from '../../img/post-2.jpg';
 import questions from '../../img/question.svg';
 
 
@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       <div id="home">
           <div id ="home-info">
-              <h1>Welcome to <span className="highlight">Smart Customer Services.</span></h1>
+              <h1>Welcome to <span className="highlight">Master Shopping.</span></h1>
               <h2>Learn more about our Products and Services.</h2>
               <Link to={'/products'}><button className="btn" href="/products" style={{background: "#149BBB"}}><i className="material-icons left">shopping_basket</i>Products</button></Link>
           </div>

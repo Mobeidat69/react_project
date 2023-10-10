@@ -77,8 +77,9 @@ const Register = () => {
                 <input className="register-input" id="username bar" type="text" name = "username" style={{width:"90%"}} required/><br/>
                 <label for="password" style={{width:"90%"}}>Password</label><br/>
                 <input className="register-input" id="password bar" type="password" name="password" style={{width:"90%"}}   required/><br/>
-                <span className="helper-text" data-error="wrong" data-success="right">Already have an account? <Link to="/login"><a><u>Sign in</u></a></Link></span><br/>
-                <button className="btn save-button" type="submit" name="signin" style={{margintop:"30px",background:"#149BBB"}}>Create Account
+                <span className="helper-text" data-error="wrong" data-success="right">Already have an account? <Link to="/login"><a><u style={{color:"rgb(11, 123, 29)"}}>Sign in</u></a></Link></span><br/>
+                <br></br>
+                <button className="btn save-button" type="submit" name="signin" style={{margintop:"30px",background:"rgb(11, 123, 29)"}}>Create Account
                     <i className="material-icons right">send</i>
                 </button><br/>
             </form>

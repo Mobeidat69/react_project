@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import '../../css/navbar.css';
+import logo from './logo.png';
+
 
 const Navbar = () => {
   const [status, changeStatus] = useState(["Login", "Register"]);
@@ -55,7 +57,14 @@ const Navbar = () => {
     <div>
       <nav className="z-depth-0">
         <div className="nav-wrapper">
-          <Link to="/"><a className="brand-logo">S<span className="material-icons black-icons" id="globe">travel_explore</span>S</a></Link>
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            className="brand-logo"
+            style={{ marginLeft:10 ,width: '100px', height: '100px', objectFit: 'cover' }}
+          />
+        </Link>
           <a href="" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons" id="hamburger">menu</i></a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><Link to="/"><a>Home</a></Link></li>
